@@ -9,14 +9,14 @@
 #import <Foundation/Foundation.h>
 
 @protocol RuntimeBaseProtocol <NSObject>
-
+@property (nonatomic, strong) NSString *protocolString;
 @optional
 
 - (void)doBaseAction;
 
 @end
 
-@protocol RuntimeProtocol <NSObject>
+@protocol RuntimeProtocol <NSObject,RuntimeBaseProtocol>
 
 @optional
 
@@ -35,5 +35,7 @@
 - (void)runtimeTestAction1;
 
 - (void)runtimeTestAction2;
+
+- (void)runtimeTestAction3;
 
 @end

@@ -18,4 +18,8 @@
 - (void)runtimeTestAction2{
     NSLog(@"runtimeTestAction2");
 }
+
+- (void)runtimeTestAction3{
+    NSLog(@"runtimeTestAction3");
+}
 @end
